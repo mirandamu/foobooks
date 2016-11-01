@@ -6,6 +6,8 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'AddPageCountFieldToBooksTable' => $baseDir . '/database/migrations/2016_10_31_222020_add_page_count_field_to_books_table.php',
+    'CreateBooksTable' => $baseDir . '/database/migrations/2016_10_31_221509_create_books_table.php',
     'CreatePasswordResetsTable' => $baseDir . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
     'CreateUsersTable' => $baseDir . '/database/migrations/2014_10_12_000000_create_users_table.php',
     'DatabaseSeeder' => $baseDir . '/database/seeds/DatabaseSeeder.php',
@@ -102,6 +104,7 @@ return array(
     'PHPUnit_Framework_Constraint_ClassHasStaticAttribute' => $vendorDir . '/phpunit/phpunit/src/Framework/Constraint/ClassHasStaticAttribute.php',
     'PHPUnit_Framework_Constraint_Composite' => $vendorDir . '/phpunit/phpunit/src/Framework/Constraint/Composite.php',
     'PHPUnit_Framework_Constraint_Count' => $vendorDir . '/phpunit/phpunit/src/Framework/Constraint/Count.php',
+    'PHPUnit_Framework_Constraint_DirectoryExists' => $vendorDir . '/phpunit/phpunit/src/Framework/Constraint/DirectoryExists.php',
     'PHPUnit_Framework_Constraint_Exception' => $vendorDir . '/phpunit/phpunit/src/Framework/Constraint/Exception.php',
     'PHPUnit_Framework_Constraint_ExceptionCode' => $vendorDir . '/phpunit/phpunit/src/Framework/Constraint/ExceptionCode.php',
     'PHPUnit_Framework_Constraint_ExceptionMessage' => $vendorDir . '/phpunit/phpunit/src/Framework/Constraint/ExceptionMessage.php',
@@ -119,8 +122,10 @@ return array(
     'PHPUnit_Framework_Constraint_IsJson' => $vendorDir . '/phpunit/phpunit/src/Framework/Constraint/IsJson.php',
     'PHPUnit_Framework_Constraint_IsNan' => $vendorDir . '/phpunit/phpunit/src/Framework/Constraint/IsNan.php',
     'PHPUnit_Framework_Constraint_IsNull' => $vendorDir . '/phpunit/phpunit/src/Framework/Constraint/IsNull.php',
+    'PHPUnit_Framework_Constraint_IsReadable' => $vendorDir . '/phpunit/phpunit/src/Framework/Constraint/IsReadable.php',
     'PHPUnit_Framework_Constraint_IsTrue' => $vendorDir . '/phpunit/phpunit/src/Framework/Constraint/IsTrue.php',
     'PHPUnit_Framework_Constraint_IsType' => $vendorDir . '/phpunit/phpunit/src/Framework/Constraint/IsType.php',
+    'PHPUnit_Framework_Constraint_IsWritable' => $vendorDir . '/phpunit/phpunit/src/Framework/Constraint/IsWritable.php',
     'PHPUnit_Framework_Constraint_JsonMatches' => $vendorDir . '/phpunit/phpunit/src/Framework/Constraint/JsonMatches.php',
     'PHPUnit_Framework_Constraint_JsonMatches_ErrorMessageProvider' => $vendorDir . '/phpunit/phpunit/src/Framework/Constraint/JsonMatches/ErrorMessageProvider.php',
     'PHPUnit_Framework_Constraint_LessThan' => $vendorDir . '/phpunit/phpunit/src/Framework/Constraint/LessThan.php',
@@ -450,6 +455,8 @@ return array(
     'PHP_Token_XOR_EQUAL' => $vendorDir . '/phpunit/php-token-stream/src/Token.php',
     'PHP_Token_YIELD' => $vendorDir . '/phpunit/php-token-stream/src/Token.php',
     'PHP_Token_YIELD_FROM' => $vendorDir . '/phpunit/php-token-stream/src/Token.php',
+    'Rap2hpoutre\\LaravelLogViewer\\BaseController' => $vendorDir . '/rap2hpoutre/laravel-log-viewer/src/controllers/LogViewerController.php',
+    'Rap2hpoutre\\LaravelLogViewer\\LogViewerController' => $vendorDir . '/rap2hpoutre/laravel-log-viewer/src/controllers/LogViewerController.php',
     'SebastianBergmann\\CodeCoverage\\CodeCoverage' => $vendorDir . '/phpunit/php-code-coverage/src/CodeCoverage.php',
     'SebastianBergmann\\CodeCoverage\\CoveredCodeNotExecutedException' => $vendorDir . '/phpunit/php-code-coverage/src/Exception/CoveredCodeNotExecutedException.php',
     'SebastianBergmann\\CodeCoverage\\Driver\\Driver' => $vendorDir . '/phpunit/php-code-coverage/src/Driver/Driver.php',
