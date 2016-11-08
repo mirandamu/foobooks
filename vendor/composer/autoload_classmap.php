@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'AddPageCountFieldToBooksTable' => $baseDir . '/database/migrations/2016_10_31_222020_add_page_count_field_to_books_table.php',
+    'BooksTableSeeder' => $baseDir . '/database/seeds/BooksTableSeeder.php',
     'CreateBooksTable' => $baseDir . '/database/migrations/2016_10_31_221509_create_books_table.php',
     'CreatePasswordResetsTable' => $baseDir . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
     'CreateUsersTable' => $baseDir . '/database/migrations/2014_10_12_000000_create_users_table.php',
