@@ -88,11 +88,63 @@ class PracticeController extends Controller
     public function example8(){
         $book = Book::where('author', 'LIKE', '%Scott%')->first();
 
+        # If we found the book, update it
         if($book) {
-            return $book->title;
+
+            # Give it a different title
+            $book->title = 'The Really Great Gatsby';
+
+            # Save the changes
+            $book->save();
+
+            echo "Update complete; check the database to see if your update worked...";
         }
         else {
-            return 'Book not found.';
+            echo "Book not found, can't update.";
         }
+    }
+
+    public function example9(){
+        # First get a book to delete
+    $book = Book::where('author', 'LIKE', '%Scott%')->first();
+
+    # If we found the book, delete it
+        if($book) {
+
+            # Goodbye!
+            $book->delete();
+
+            return "Deletion complete; check the database to see if it worked...";
+
+        }
+        else {
+            return "Can't delete - Book not found.";
+        }
+    }
+
+    public function example10(){
+        $books = Book::all();
+        dump($books->toArray());
+    }
+
+    public function example11()){
+        # To do this, we'll first create a new author:
+        $author = new Author;
+        $author->first_name = 'J.K';
+        $author->last_name = 'Rowling';
+        $author->bio_url = 'https://en.wikipedia.org/wiki/J._K._Rowling';
+        $author->birth_year = '1965';
+        $author->save();
+        dump($author->toArray());
+
+        # Then we'll create a new book and associate it with the author:
+        $book = new Book;
+        $book->title = "Harry Potter and the Philosopher's Stone";
+        $book->published = 1997;
+        $book->cover = 'http://prodimage.images-bn.com/pimages/9781582348254_p0_v1_s118x184.jpg';
+        $book->purchase_link = 'http://www.barnesandnoble.com/w/harrius-potter-et-philosophi-lapis-j-k-rowling/1102662272?ean=9781582348254';
+        $book->author()->associate($author); # <--- Associate the author with this book
+        $book->save();
+        dump($book->toArray());
     }
 }
