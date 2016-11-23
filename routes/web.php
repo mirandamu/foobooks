@@ -11,6 +11,18 @@
 |
 */
 
+if(App::environment('local')) {
+
+    Route::get('/drop', function() {
+
+        DB::statement('DROP database foobooks');
+        DB::statement('CREATE database foobooks');
+
+        return 'Dropped foobooks; created foobooks.';
+    });
+
+};
+
 Route::get('/', function () {
     return view('welcome');
 });

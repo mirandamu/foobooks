@@ -13,7 +13,7 @@ class DatabaseSeeder extends Seeder
     {
         # Because `books` will be associated with `authors`,
         # authors should be seeded first
-        $this->call(AuthorsTableSeeder::class);
+        # $this->call(AuthorsTableSeeder::class);
         $this->call(BooksTableSeeder::class);
     }
 }

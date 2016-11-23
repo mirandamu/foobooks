@@ -303,12 +303,10 @@ class ComposerStaticInit5f25ef287541c1304a75e8469757a080
     );
 
     public static $classMap = array (
-        'AddPageCountFieldToBooksTable' => __DIR__ . '/../..' . '/database/migrations/2016_10_31_222020_add_page_count_field_to_books_table.php',
+        'AddPageCountFieldToBooksTable' => __DIR__ . '/../..' . '/database/migrations/2016_11_23_181729_add_page_count_field_to_books_table.php',
         'AuthorsTableSeeder' => __DIR__ . '/../..' . '/database/seeds/AuthorsTableSeeder.php',
         'BooksTableSeeder' => __DIR__ . '/../..' . '/database/seeds/BooksTableSeeder.php',
-        'ConnectAuthorsAndBooks' => __DIR__ . '/../..' . '/database/migrations/2016_11_16_205814_connect_authors_and_books.php',
-        'CreateAuthorsTable' => __DIR__ . '/../..' . '/database/migrations/2016_11_16_205501_create_authors_table.php',
-        'CreateBooksTable' => __DIR__ . '/../..' . '/database/migrations/2016_10_31_221509_create_books_table.php',
+        'CreateBookssTable' => __DIR__ . '/../..' . '/database/migrations/2016_11_23_181353_create_bookss_table.php',
         'CreatePasswordResetsTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
         'CreateUsersTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_000000_create_users_table.php',
         'DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeds/DatabaseSeeder.php',
